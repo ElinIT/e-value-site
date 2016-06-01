@@ -6,6 +6,9 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic);
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -95,17 +98,164 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
 
 
 
 
 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.l-grey {
+    background-color: #808080;
+}
+
+.l-green {
+    background-color: #2f6875;
+}
+
+.l-red {
+    background-color: #be1622;
+}
+
+.l-text-white {
+    color: #fefefe;
+}
+
+.l-text-center {
+    text-align: center;
+}
+
+.l-text-lowercase {
+    text-transform: lowercase;
+}
+
+
+
+
+#site-header {
+    background: url(../img/gebhart.jpg) no-repeat top center;  
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    margin-top: 0px;
+    height: 700px;
+}
+
+.site-header-text {
+    position: relative;
+    top: 60%;
+}
+
+.site-header-text > h3 {
+    background-color: #2f6875;
+    padding: 10px 10px 10px 30px;
+    margin: 0px;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
+    width: 310px;
+}
+
+.site-header-text > h1 {
+    padding: 10px 10px 10px 60px;
+    margin: 0px;
+    color: #fefefe;
+    text-transform: uppercase;
+    width: 660px;
+    text-shadow: 1px 1px 3px #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.site-header-text > h1 > span {
+    color: #be1622;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.site-header-text > h1 > span.icon-quotes-left {
+}
+
+.site-header-text > h1 > span.icon-quotes-right {
+}
 
 
 
 
 
+/* ==========================================================================
+   Contact
+   ========================================================================== */
 
+#contact address {
+    margin: 12px 0;
+}
+
+#contact address > a {
+    color: #fefefe;
+}
+
+#contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contact ul > li {
+    float: right;
+}
+
+#contact ul > li > a {
+    display: block;
+    text-align: center;
+    padding: 41px 24px;
+    color: #fefefe;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.logo-contact {
+    height: 60px;
+    margin: 20px 0;
+}
+
+
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer ul {
+    list-style-type: none;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#footer ul > li {
+    float: left;
+}
+
+#footer ul > li > a {
+    display: block;
+    text-align: center;
+    padding: 12px 12px;
+    color: #fefefe;
+}
 
 
 
